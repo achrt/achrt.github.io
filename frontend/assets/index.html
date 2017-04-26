@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="styles/styles.css">
+	<title>Test</title>
+</head>
+<body>
+	<section class="test">
+		<header class="header">
+			<!--Верхний блок со стрелками-->
+			<div class="header__shapeBlock">
+				<i class="header__shapeBlock__arrow-left"></i>
+				<p class="header__shapeBlock__nextHouse">пр. Комсомольский, 44</p>
+				<div class="block__title">
+					<span class="title__rectangle-15"></span>
+					<span class="title__Rectangle-19"></span>
+					<p class="title__name">Дом</p>
+					<span class="title__Rectangle-19"></span>
+					<span class="title__rectangle-15"></span>
+				</div>
+				<p class="header__shapeBlock__nextHouse">пр. Комсомольский, 108</p>
+				<i class="header__shapeBlock__arrow-left"></i>
+			</div>
+			<!--Блок с изображением-->
+			<div class="header__containerImg">
+				<img src="images/1.png" alt="Дом 44 на Комсомольском" class="header__containerImg-background">
+				<!---->
+				<div class="header__containerImg-inner">
+					<h1 class="header__containerImg__h1">Комсомольский, 44</h1>
+					<p class="g-description">Жилой дом</p>
+					<p class="header__containerImg__sale">Скидка 10%</p>
+					<p class="g-description">действует до 20.11.2016</p>
+				</div>
+				<!--Навигация-->
+				<div class="header__containerImg__nav">
+					<ul>
+						<li class="nav__item"><a href="#" class="g-link">Описание</a></li>
+						<li class="nav__item"><a href="#" class="g-link">Инфраструктура</a></li>
+						<li class="nav__item"><a href="#" class="g-link">Ход строительства</a></li>
+						<li class="nav__item"><a href="#" class="g-link">Квартиры в прождаже</a></li>
+						<li class="nav__item"><a href="#" class="g-link">Паркинг</a></li>
+						<li class="nav__item"><a href="#" class="g-link">Документы</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<!--Описание проекта-->
+		<section class="declaration">
+			<ul>
+				<li class="declaration__info">
+					<p class="info_helpText-S">Сдача</p>
+					<p class="info_helpText-L">II кв. 2019</p>
+				</li>
+				<li class="declaration__info__border">
+					<p class="info_helpText-S">Тип дома</p>
+					<p class="info_helpText-L">Монолитно-кирпичный</p>
+				</li>
+				<li class="declaration__info">
+					<p class="info_helpText-S">Статус дома</p>
+					<p class="info_helpText-L">Строится</p>
+				</li>
+			</ul>
+			<!--Абзацы-->
+			<div class="declaration__text">
+				<p class="declaration__text-p">Жилой комплекс расположен в Октябрьском районе г. Барнаула на пересечении улиц: ул. Путиловская и пр. Комсомольский. Представляет собой четыре секции жилого дома переменной этажности (секция №2, №3, №4, №5). На территории двора размещенны все необходимые площадки: для подвижных игра детей, отдыха взрослого населения, спортивные  и хозяйственные.</p>
+				<p class="declaration__text-p">Фасады дома с витражным остеклением делают жилой комплекс ярким и неповторимым. Фасадная отделка представляет собой комбинацию кирпича и штукатурки. На высоту первых четырех этажей отделочный материал представлен облицовочным керамическим кирпичом двух видов (красный и «хамелеон» ), выше четвертого этажа отделка выполненна полимерной штукатуркой  с последующей окраской.</p>
+			</div>
+			<!--Блок с картинками-->
+			<div class="declaration__pic">
+				<img src="images/1png" alt="Дом 44 на Комсомольском" class="declaration__pic_img g-inline">
+				<img src="images/1png" alt="Дом 44 на Комсомольском" class="declaration__pic_img g-inline">
+				<img src="images/1png" alt="Дом 44 на Комсомольском" class="declaration__pic_img g-inline">
+				<img src="images/1png" alt="Дом 44 на Комсомольском" class="declaration__pic_img g-inline">
+				<img src="images/1png" alt="Дом 44 на Комсомольском" class="declaration__pic_img g-inline">
+				<img src="images/1png" alt="Дом 44 на Комсомольском" class="declaration__pic_img g-inline">
+			</div>
+		</section>
+		<!--Инфраструктура-->
+		<section class="infrastructure">
+			<div class="block__title">
+				<span class="title__rectangle-15"></span>
+				<span class="title__Rectangle-19"></span>
+				<p class="title__name">Инфраструктура</p>
+				<span class="title__Rectangle-19"></span>
+				<span class="title__rectangle-15"></span>
+			</div>
+			<div id="map" class="infrastructure__map"></div>
+		</section>
+		<!--Ход строительства-->
+		<section class="progress">
+			<div class="block__title">
+				<span class="title__rectangle-15"></span>
+				<span class="title__Rectangle-19"></span>
+				<p class="title__name">Ход строительства</p>
+				<span class="title__Rectangle-19"></span>
+				<span class="title__rectangle-15"></span>
+			</div>
+			<!--Карусель (! скрипт не подключен)-->
+			<div class="progress__slider">
+				<div class="slider__reactangle"></div>
+				<div id="owl-example" class="owl-carousel">
+				  <div><img src="slider1.png" alt="house"><p>24 / 10 / 2016</p></div>
+				  <div><img src="slider2.png" alt="house"><p>24 / 09 / 2016</p></div>
+				  <div><img src="slider3.png" alt="house"><p>24 / 09 / 2016</p></div>
+				  <div><img src="slider1.png" alt="house"><p>24 / 09 / 2016</p></div>
+				  <div><img src="slider2.png" alt="house"><p>24 / 09 / 2016</p></div>
+				  <div><img src="slider3.png" alt="house"><p>24 / 09 / 2016</p></div>
+				</div>
+			</div>
+		</section>
+		<!--Планировки этажей-->
+		<section class="floorsPlan">
+			<fieldset class="border">
+		  		<legend align="center">Текст</legend>
+		  		<div class="carousel__box">
+					<div id="owl-example2" class="owl-carousel">
+					  <div><img src="plan.jpg" alt="house"></div>
+					  <div><img src="plan.jpg" alt="house"></div>
+					  <div><img src="plan.jpg" alt="house"></div>
+					  <div><img src="plan.jpg" alt="house"></div>
+					  <div><img src="plan.jpg" alt="house"></div>
+					</div>
+				</div>
+			</fieldset>
+		</section>
+	</section>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgARucHlnVb4QK70MNQKX5MMdVc4sBbqI&callback=initMap" async defer></script>
+<script src="jquery-1.9.1.min.js"></script>
+<script src="owl-carousel/owl.carousel.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
