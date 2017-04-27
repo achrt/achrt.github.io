@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="owl-carousel/owl.carousel.css">
 	<link rel="stylesheet" href="styles/styles.css">
 	<title>Test</title>
 </head>
@@ -10,37 +11,41 @@
 		<header class="header">
 			<!--Верхний блок со стрелками-->
 			<div class="header__shapeBlock">
-				<i class="header__shapeBlock__arrow-left"></i>
-				<p class="header__shapeBlock__nextHouse">пр. Комсомольский, 44</p>
-				<div class="block__title">
-					<span class="title__rectangle-15"></span>
-					<span class="title__Rectangle-19"></span>
-					<p class="title__name">Дом</p>
-					<span class="title__Rectangle-19"></span>
-					<span class="title__rectangle-15"></span>
+				<i class="header__shapeBlock__arrow-left g-inline g-float_left"></i>
+				<p class="header__shapeBlock__nextHouse g-inline g-float_left">пр. Комсомольский, 44</p>
+				<div class="block__title g-inline">
+					<span class="title__rectangle angle_1 g-inline"></span>
+					<span class="title__Rectangle-19 g-inline"></span>
+					<p class="title__name g-inline">Дом</p>
+					<span class="title__Rectangle-19 g-inline"></span>
+					<span class="title__rectangle angle_2 g-inline"></span>
 				</div>
-				<p class="header__shapeBlock__nextHouse">пр. Комсомольский, 108</p>
-				<i class="header__shapeBlock__arrow-left"></i>
+				<p class="header__shapeBlock__nextHouse g-inline g-float_right">пр. Комсомольский, 108</p>
+				<i class="header__shapeBlock__arrow-right g-inline g-float_right"></i>
 			</div>
 			<!--Блок с изображением-->
-			<div class="header__containerImg">
-				<img src="images/1.png" alt="Дом 44 на Комсомольском" class="header__containerImg-background">
-				<!---->
-				<div class="header__containerImg-inner">
-					<h1 class="header__containerImg__h1">Комсомольский, 44</h1>
-					<p class="g-description">Жилой дом</p>
-					<p class="header__containerImg__sale">Скидка 10%</p>
-					<p class="g-description">действует до 20.11.2016</p>
+			<div class="header__container">
+				<img src="images/1.png" alt="Дом 44 на Комсомольском" class="header__container-background">
+				<!--Сложить все в один блок и выровнять марджинами в процентах(?)-->
+				<div class="header__container-inner">
+					<div class="inner__div-h1">
+						<h1 class="header__container__h1">Комсомольский, 44</h1>
+						<p class="g-description">Жилой дом</p>
+					</div>
+					<div class="inner__div-p">
+						<p class="header__container__sale">Скидка 10%</p>
+						<p class="g-description">действует до 20.11.2016</p>
+					</div>
 				</div>
 				<!--Навигация-->
-				<div class="header__containerImg__nav">
+				<div class="header__container__nav">
 					<ul>
-						<li class="nav__item"><a href="#" class="g-link">Описание</a></li>
-						<li class="nav__item"><a href="#" class="g-link">Инфраструктура</a></li>
-						<li class="nav__item"><a href="#" class="g-link">Ход строительства</a></li>
-						<li class="nav__item"><a href="#" class="g-link">Квартиры в прождаже</a></li>
-						<li class="nav__item"><a href="#" class="g-link">Паркинг</a></li>
-						<li class="nav__item"><a href="#" class="g-link">Документы</a></li>
+						<li class="nav__item g-inline"><a href="#" class="g-link g-description">Описание</a></li>
+						<li class="nav__item g-inline"><a href="#" class="g-link g-description">Инфраструктура</a></li>
+						<li class="nav__item g-inline"><a href="#" class="g-link g-description">Ход строительства</a></li>
+						<li class="nav__item g-inline"><a href="#" class="g-link g-description">Квартиры в прождаже</a></li>
+						<li class="nav__item g-inline"><a href="#" class="g-link g-description">Паркинг</a></li>
+						<li class="nav__item g-inline"><a href="#" class="g-link g-description">Документы</a></li>
 					</ul>
 				</div>
 			</div>
@@ -48,85 +53,292 @@
 		<!--Описание проекта-->
 		<section class="declaration">
 			<ul>
-				<li class="declaration__info">
-					<p class="info_helpText-S">Сдача</p>
+				<li class="declaration__info g-inline">
+					<p class="info_helpText-S g-description">Сдача</p>
 					<p class="info_helpText-L">II кв. 2019</p>
 				</li>
-				<li class="declaration__info__border">
-					<p class="info_helpText-S">Тип дома</p>
+				<li class="declaration__info__border g-inline">
+					<p class="info_helpText-S g-description">Тип дома</p>
 					<p class="info_helpText-L">Монолитно-кирпичный</p>
 				</li>
-				<li class="declaration__info">
-					<p class="info_helpText-S">Статус дома</p>
+				<li class="declaration__info g-inline">
+					<p class="info_helpText-S g-description">Статус дома</p>
 					<p class="info_helpText-L">Строится</p>
 				</li>
 			</ul>
 			<!--Абзацы-->
 			<div class="declaration__text">
-				<p class="declaration__text-p">Жилой комплекс расположен в Октябрьском районе г. Барнаула на пересечении улиц: ул. Путиловская и пр. Комсомольский. Представляет собой четыре секции жилого дома переменной этажности (секция №2, №3, №4, №5). На территории двора размещенны все необходимые площадки: для подвижных игра детей, отдыха взрослого населения, спортивные  и хозяйственные.</p>
-				<p class="declaration__text-p">Фасады дома с витражным остеклением делают жилой комплекс ярким и неповторимым. Фасадная отделка представляет собой комбинацию кирпича и штукатурки. На высоту первых четырех этажей отделочный материал представлен облицовочным керамическим кирпичом двух видов (красный и «хамелеон» ), выше четвертого этажа отделка выполненна полимерной штукатуркой  с последующей окраской.</p>
+				<p class="declaration__text-p g-inline">Жилой комплекс расположен в Октябрьском районе г. Барнаула на пересечении улиц: ул. Путиловская и пр. Комсомольский. Представляет собой четыре секции жилого дома переменной этажности (секция №2, №3, №4, №5). На территории двора размещенны все необходимые площадки: для подвижных игра детей, отдыха взрослого населения, спортивные  и хозяйственные.</p>
+				<p class="declaration__text-p g-inline">Фасады дома с витражным остеклением делают жилой комплекс ярким и неповторимым. Фасадная отделка представляет собой комбинацию кирпича и штукатурки. На высоту первых четырех этажей отделочный материал представлен облицовочным керамическим кирпичом двух видов (красный и «хамелеон» ), выше четвертого этажа отделка выполненна полимерной штукатуркой  с последующей окраской.</p>
 			</div>
 			<!--Блок с картинками-->
 			<div class="declaration__pic">
-				<img src="images/1png" alt="Дом 44 на Комсомольском" class="declaration__pic_img g-inline">
-				<img src="images/1png" alt="Дом 44 на Комсомольском" class="declaration__pic_img g-inline">
-				<img src="images/1png" alt="Дом 44 на Комсомольском" class="declaration__pic_img g-inline">
-				<img src="images/1png" alt="Дом 44 на Комсомольском" class="declaration__pic_img g-inline">
-				<img src="images/1png" alt="Дом 44 на Комсомольском" class="declaration__pic_img g-inline">
-				<img src="images/1png" alt="Дом 44 на Комсомольском" class="declaration__pic_img g-inline">
+				<img src="images/1-1.png" alt="Дом 44 на Комсомольском" class="declaration__pic_img g-inline">
+				<img src="images/1-2.png" alt="Дом 44 на Комсомольском" class="declaration__pic_img g-inline">
+				<img src="images/1-3.png" alt="Дом 44 на Комсомольском" class="declaration__pic_img g-inline">
+				<img src="images/1-4.png" alt="Дом 44 на Комсомольском" class="declaration__pic_img g-inline">
+				<img src="images/1-5.png" alt="Дом 44 на Комсомольском" class="declaration__pic_img g-inline">
+				<img src="images/1-6.png" alt="Дом 44 на Комсомольском" class="declaration__pic_img g-inline">
 			</div>
 		</section>
 		<!--Инфраструктура-->
 		<section class="infrastructure">
-			<div class="block__title">
-				<span class="title__rectangle-15"></span>
-				<span class="title__Rectangle-19"></span>
-				<p class="title__name">Инфраструктура</p>
-				<span class="title__Rectangle-19"></span>
-				<span class="title__rectangle-15"></span>
+			<div class="block__title g-inline">
+				<span class="title__rectangle angle_1 g-inline"></span>
+				<span class="title__Rectangle-19 g-inline"></span>
+				<p class="title__name g-inline">Инфраструктура</p>
+				<span class="title__Rectangle-19 g-inline"></span>
+				<span class="title__rectangle angle_2 g-inline"></span>
 			</div>
 			<div id="map" class="infrastructure__map"></div>
 		</section>
 		<!--Ход строительства-->
 		<section class="progress">
-			<div class="block__title">
-				<span class="title__rectangle-15"></span>
-				<span class="title__Rectangle-19"></span>
-				<p class="title__name">Ход строительства</p>
-				<span class="title__Rectangle-19"></span>
-				<span class="title__rectangle-15"></span>
+			<div class="block__title g-inline">
+				<span class="title__rectangle angle_1 g-inline"></span>
+				<span class="title__Rectangle-19 g-inline"></span>
+				<p class="title__name g-inline">Ход строительства</p>
+				<span class="title__Rectangle-19 g-inline"></span>
+				<span class="title__rectangle angle_2 g-inline"></span>
 			</div>
 			<!--Карусель (! скрипт не подключен)-->
 			<div class="progress__slider">
 				<div class="slider__reactangle"></div>
 				<div id="owl-example" class="owl-carousel">
-				  <div><img src="slider1.png" alt="house"><p>24 / 10 / 2016</p></div>
-				  <div><img src="slider2.png" alt="house"><p>24 / 09 / 2016</p></div>
-				  <div><img src="slider3.png" alt="house"><p>24 / 09 / 2016</p></div>
-				  <div><img src="slider1.png" alt="house"><p>24 / 09 / 2016</p></div>
-				  <div><img src="slider2.png" alt="house"><p>24 / 09 / 2016</p></div>
-				  <div><img src="slider3.png" alt="house"><p>24 / 09 / 2016</p></div>
+				  <div class="owl-item"><img src="images/slider1.png" alt="house"><p>24 / 10 / 2016</p></div>
+				  <div class="owl-item"><img src="images/slider2.png" alt="house"><p>24 / 09 / 2016</p></div>
+				  <div class="owl-item"><img src="images/slider3.png" alt="house"><p>24 / 09 / 2016</p></div>
+				  <div class="owl-item"><img src="images/slider1.png" alt="house"><p>24 / 09 / 2016</p></div>
+				  <div class="owl-item"><img src="images/slider2.png" alt="house"><p>24 / 09 / 2016</p></div>
+				  <div class="owl-item"><img src="images/slider3.png" alt="house"><p>24 / 09 / 2016</p></div>
 				</div>
 			</div>
 		</section>
 		<!--Планировки этажей-->
 		<section class="floorsPlan">
-			<fieldset class="border">
-		  		<legend align="center">Текст</legend>
-		  		<div class="carousel__box">
-					<div id="owl-example2" class="owl-carousel">
-					  <div><img src="plan.jpg" alt="house"></div>
-					  <div><img src="plan.jpg" alt="house"></div>
-					  <div><img src="plan.jpg" alt="house"></div>
-					  <div><img src="plan.jpg" alt="house"></div>
-					  <div><img src="plan.jpg" alt="house"></div>
+			<fieldset class="floorsPlan__border">
+		  		<legend align="center">
+					<div class="block__title g-inline">
+						<span class="title__rectangle angle_1 g-inline"></span>
+						<span class="title__Rectangle-19 g-inline"></span>
+						<p class="title__name g-inline">Планировки этажей</p>
+						<span class="title__Rectangle-19 g-inline"></span>
+						<span class="title__rectangle angle_2 g-inline"></span>
 					</div>
+		  		</legend>
+		  		<div class="floorsPlan__carousel__box">
+					<div id="owl-example2" class="owl-carousel">
+					  <div><img src="images/plan.jpg" alt="house"></div>
+					  <div><img src="images/plan.jpg" alt="house"></div>
+					  <div><img src="images/plan.jpg" alt="house"></div>
+					  <div><img src="images/plan.jpg" alt="house"></div>
+					  <div><img src="images/plan.jpg" alt="house"></div>
+					</div>
+				</div>
+			</fieldset>
+		</section>
+		<!--Квартиры в продаже-->
+		<section class="flats-InSale">
+			<div class="block__title g-inline">
+				<span class="title__rectangle angle_1 g-inline"></span>
+				<span class="title__Rectangle-19 g-inline"></span>
+				<p class="title__name g-inline">Квартиры в продаже</p>
+				<span class="title__Rectangle-19 g-inline"></span>
+				<span class="title__rectangle angle_2 g-inline"></span>
+			</div>
+			<div class="flat__tabs">
+			    <ul class="pix__flat__tabs" id="first-flat-tab">
+			    	<li class="pix__flat__tabs-li"><a href="#first-flat-tab" class="active-tab">Секция 1</a></li>
+			        <li class="pix__flat__tabs-li"><a href="#second-flat-tab" class="tab">Секция 2</a></li>
+			        <div class="content-tab">
+			        	<form action="" class="flats__form">
+			        		<p class="g-inline"><input type="radio" value="all" name="all-Fl" class="radio-style"></p>
+			        		<p class="g-inline"><input type="radio" value="single" name="all-Fl" class="radio-style"></p>
+			        		<p class="g-inline"><input type="radio" value="double" name="all-Fl" class="radio-style"></p>
+			        		<p class="g-inline"><input type="radio" value="triple" name="all-Fl" class="radio-style"></p>
+			        	</form>
+			        	<section class="flat__section">
+			        		<div class="flat__section-1">
+			        			<div class="g-inline"><p>1</p></div>
+			        			<div class="g-inline"><span class="g-inline">71</span><span class="g-inline g-lightGray">48,34</span></div>
+			        			<div class="g-inline"><span class="g-inline">72</span><span class="g-inline g-lightGray">48,34</span></div>
+			        			<div class="g-inline"><span class="g-inline">73</span><span class="g-inline g-lightGray">48,34</span></div>
+			        			<div class="g-inline"><span class="g-inline">74</span><span class="g-inline g-lightGray">48,34</span></div>
+			        			<div class="g-inline"><span class="g-inline">75</span><span class="g-inline g-lightGray">48,34</span></div>
+			        			<div class="g-inline"><span class="g-inline">76</span><span class="g-inline g-lightGray">48,34</span></div>
+			        			<div class="g-inline"><span class="g-inline">77</span><span class="g-inline g-lightGray">48,34</span></div>
+			        			<div class="g-inline"><span class="g-inline">78</span><span class="g-inline g-lightGray">48,34</span></div>
+			        		</div>
+			        		<div class="flat__section-2">
+			        			<div class="g-inline"><p>1</p></div>
+			        			<div class="g-inline"><span class="g-inline">62</span><span class="g-inline g-lightGray">76,34</span></div>
+			        			<div class="g-inline"><span class="g-inline">63</span><span class="g-inline g-lightGray">76,34</span></div>
+			        			<div class="g-inline"><span class="g-inline">64</span><span class="g-inline g-lightGray">76,34</span></div>
+			        			<div class="g-inline"><span class="g-inline">65</span><span class="g-inline g-lightGray">76,34</span></div>
+			        			<div class="g-inline"><span class="g-inline">66</span><span class="g-inline g-lightGray">76,34</span></div>
+			        			<div class="g-inline"><span class="g-inline">67</span><span class="g-inline g-lightGray">76,34</span></div>
+			        			<div class="g-inline"><span class="g-inline">68</span><span class="g-inline g-lightGray">76,34</span></div>
+			        			<div class="g-inline"><span class="g-inline">69</span><span class="g-inline g-lightGray">76,34</span></div>
+			        		</div>
+			        		<div class="flat__status">
+			        			<div><span class="status__type-1 g-inline"></span><p class="g-inline">- свободные квартиры</p></div>
+			        			<div><span class="status__type-2 g-inline"></span><p class="g-inline">- забронированные квартиры</p></div>
+			        			<div><span class="status__type-3 g-inline"></span><p class="g-inline">- проданные квартиры квартиры</p></div>
+			        		</div>
+			        	</section>
+			        </div> 
+			    </ul>
+			    <!---->
+				<ul class="pix__flat__tabs" id="second-docs-tab">
+			    	<li class="pix__flat__tabs-li"><a href="#first-flat-tab" class="tab">Секция 1</a></li>
+			        <li class="pix__flat__tabs-li"><a href="#second-flat-tab" class="active-tab">Секция 2</a></li>
+			        <div class="content-tab">
+			        	<form action="" class="flats__form">
+			        		<p class="g-inline"><input type="radio" value="all" name="all-Fl" class="radio-style"></p>
+			        		<p class="g-inline"><input type="radio" value="single" name="all-Fl" class="radio-style"></p>
+			        		<p class="g-inline"><input type="radio" value="double" name="all-Fl" class="radio-style"></p>
+			        		<p class="g-inline"><input type="radio" value="triple" name="all-Fl" class="radio-style"></p>
+			        	</form>
+			        	<section class="flat__section">
+			        		<div class="flat__section-1">
+			        			<div class="g-inline"><p>1</p></div>
+			        			<div class="g-inline"><span class="g-inline">71</span><span class="g-inline g-lightGray">48,34</span></div>
+			        			<div class="g-inline"><span class="g-inline">72</span><span class="g-inline g-lightGray">48,34</span></div>
+			        			<div class="g-inline"><span class="g-inline">73</span><span class="g-inline g-lightGray">48,34</span></div>
+			        			<div class="g-inline"><span class="g-inline">74</span><span class="g-inline g-lightGray">48,34</span></div>
+			        			<div class="g-inline"><span class="g-inline">75</span><span class="g-inline g-lightGray">48,34</span></div>
+			        			<div class="g-inline"><span class="g-inline">76</span><span class="g-inline g-lightGray">48,34</span></div>
+			        			<div class="g-inline"><span class="g-inline">77</span><span class="g-inline g-lightGray">48,34</span></div>
+			        			<div class="g-inline"><span class="g-inline">78</span><span class="g-inline g-lightGray">48,34</span></div>
+			        		</div>
+			        		<div class="flat__section-2">
+			        			<div class="g-inline"><p>1</p></div>
+			        			<div class="g-inline"><span class="g-inline">62</span><span class="g-inline g-lightGray">76,34</span></div>
+			        			<div class="g-inline"><span class="g-inline">63</span><span class="g-inline g-lightGray">76,34</span></div>
+			        			<div class="g-inline"><span class="g-inline">64</span><span class="g-inline g-lightGray">76,34</span></div>
+			        			<div class="g-inline"><span class="g-inline">65</span><span class="g-inline g-lightGray">76,34</span></div>
+			        			<div class="g-inline"><span class="g-inline">66</span><span class="g-inline g-lightGray">76,34</span></div>
+			        			<div class="g-inline"><span class="g-inline">67</span><span class="g-inline g-lightGray">76,34</span></div>
+			        			<div class="g-inline"><span class="g-inline">68</span><span class="g-inline g-lightGray">76,34</span></div>
+			        			<div class="g-inline"><span class="g-inline">69</span><span class="g-inline g-lightGray">76,34</span></div>
+			        		</div>
+			        		<div class="flat__status">
+			        			<div><span class="status__type-1 g-inline"></span><p class="g-inline">- свободные квартиры</p></div>
+			        			<div><span class="status__type-2 g-inline"></span><p class="g-inline">- забронированные квартиры</p></div>
+			        			<div><span class="status__type-3 g-inline"></span><p class="g-inline">- проданные квартиры квартиры</p></div>
+			        		</div>
+			        	</section>
+			        </div> 
+			    </ul>
+			</div>
+		</section>
+		<!--Документы-->
+		<section class="docs">
+			<fieldset class="docs__border">
+		  		<legend align="center">
+					<div class="block__title g-inline">
+						<span class="title__rectangle angle_1 g-inline"></span>
+						<span class="title__Rectangle-19 g-inline"></span>
+						<p class="title__name g-inline">Документы</p>
+						<span class="title__Rectangle-19 g-inline"></span>
+						<span class="title__rectangle angle_2 g-inline"></span>
+					</div>
+		  		</legend>
+		  		<!--Секция с табами-->
+		  		<div class="docs__tabs">
+				    <ul class="pix__docs__tabs" id="first-docs-tab">
+				    	<li class="pix__docs__tabs-li"><a href="#first-docs-tab" class="active-tab">Документы объекта</a></li>
+				        <li class="pix__docs__tabs-li"><a href="#second-docs-tab" class="tab">Финансовые документы</a></li>
+				        <li class="pix__docs__tabs-li"><a href="#third-docs-tab" class="tab">Форма договора долевого участия</a></li>
+				        <li class="pix__docs__tabs-li"><a href="#forth-docs-tab" class="tab">Паркинг</a></li>
+				        <div class="content-tab">
+				        	<ul class="docs__tabs__iconSet">
+				        		<li class="g-inline">
+				        			<div><i class="g-inline doc__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Проектная декларация</span></div>
+				        			<div><i class="g-inline doc__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Разрешение на строительство</span></div>
+				        		</li>
+				        		<li class="g-inline">
+				        			<div><i class="g-inline doc__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Изменения в ПД</span></div>
+				        			<div><i class="g-inline doc__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Свидетельство о государственной регистрации права собственности на земельный участок</span></div>
+				        		</li>
+				        		<li class="g-inline">
+				        			<div><i class="g-inline doc__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Проектная декларация</span></div>
+				        		</li>
+				        	</ul>
+				        </div> 
+				    </ul>
+				    <!---->
+					<ul class="pix__docs__tabs" id="second-docs-tab">
+				    	<li class="pix__docs__tabs-li"><a href="#first-docs-tab" class="tab">Документы объекта</a></li>
+				        <li class="pix__docs__tabs-li"><a href="#second-docs-tab" class="active-tab">Финансовые документы</a></li>
+				        <li class="pix__docs__tabs-li"><a href="#third-docs-tab" class="tab">Форма договора долевого участия</a></li>
+				        <li class="pix__docs__tabs-li"><a href="#forth-docs-tab" class="tab">Паркинг</a></li> 
+				        <div class="content-tab">
+				        	<ul class="docs__tabs__iconSet">
+				        		<li class="g-inline">
+				        			<div><i class="g-inline doc__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Проектная декларация</span></div>
+				        			<div><i class="g-inline doc__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Разрешение на строительство</span></div>
+				        		</li>
+				        		<li class="g-inline">
+				        			<div><i class="g-inline doc__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Изменения в ПД</span></div>
+				        			<div><i class="g-inline doc__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Свидетельство о государственной регистрации права собственности на земельный участок</span></div>
+				        		</li>
+				        		<li class="g-inline">
+				        			<div><i class="g-inline doc__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Проектная декларация</span></div>
+				        		</li>
+				        	</ul>
+				        </div> 
+				    </ul>
+				    <!---->
+					<ul class="pix__docs__tabs" id="third-docs-tab">
+				    	<li class="pix__docs__tabs-li"><a href="#first-docs-tab" class="tab">Документы объекта</a></li>
+				        <li class="pix__docs__tabs-li"><a href="#second-docs-tab" class="tab">Финансовые документы</a></li>
+				        <li class="pix__docs__tabs-li"><a href="#third-docs-tab" class="active-tab">Форма договора долевого участия</a></li>
+				        <li class="pix__docs__tabs-li"><a href="#forth-docs-tab" class="tab">Паркинг</a></li> 
+				        <div class="content-tab">
+				        	<ul class="docs__tabs__iconSet">
+				        		<li class="g-inline">
+				        			<div><i class="g-inline doc__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Проектная декларация</span></div>
+				        			<div><i class="g-inline doc__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Разрешение на строительство</span></div>
+				        		</li>
+				        		<li class="g-inline">
+				        			<div><i class="g-inline doc__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Изменения в ПД</span></div>
+				        			<div><i class="g-inline doc__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Свидетельство о государственной регистрации права собственности на земельный участок</span></div>
+				        		</li>
+				        		<li class="g-inline">
+				        			<div><i class="g-inline doc__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Проектная декларация</span></div>
+				        		</li>
+				        	</ul>
+				        </div> 
+				    </ul>
+				    <!---->
+					<ul class="pix__docs__tabs" id="forth-docs-tab">
+				    	<li class="pix__docs__tabs-li"><a href="#first-docs-tab" class="tab">Документы объекта</a></li>
+				        <li class="pix__docs__tabs-li"><a href="#second-docs-tab" class="tab">Финансовые документы</a></li>
+				        <li class="pix__docs__tabs-li"><a href="#third-docs-tab" class="tab">Форма договора долевого участия</a></li>
+				        <li class="pix__docs__tabs-li"><a href="#forth-docs-tab" class="active-tab">Паркинг</a></li> 
+				        <div class="content-tab">
+				        	<ul class="docs__tabs__iconSet">
+				        		<li class="g-inline">
+				        			<div><i class="g-inline doc__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Проектная декларация</span></div>
+				        			<div><i class="g-inline doc__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Разрешение на строительство</span></div>
+				        		</li>
+				        		<li class="g-inline">
+				        			<div><i class="g-inline doc__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Изменения в ПД</span></div>
+				        			<div><i class="g-inline doc__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Свидетельство о государственной регистрации права собственности на земельный участок</span></div>
+				        		</li>
+				        		<li class="g-inline">
+				        			<div><i class="g-inline doc__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Проектная декларация</span></div>
+				        		</li>
+				        	</ul>
+				        </div> 
+				    </ul>
 				</div>
 			</fieldset>
 		</section>
 	</section>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgARucHlnVb4QK70MNQKX5MMdVc4sBbqI&callback=initMap" async defer></script>
-<script src="jquery-1.9.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="owl-carousel/owl.carousel.js"></script>
 <script src="js/app.js"></script>
 </body>

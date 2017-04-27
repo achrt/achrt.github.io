@@ -26,3 +26,39 @@ function initMap() {
           infowindow.open(map, marker);
     });
 };
+/*Настройки первого слайдера*/
+
+$(document).ready(function() {
+  $("#owl-example").owlCarousel({
+    items : 3,
+    autoPlay : false,
+    navigation : true,
+    navigationText : ["prev","next"],
+    rewindNav : true,
+    pagination : false,
+    paginationNumbers: false,
+    baseClass : "owl-carousel",
+    theme : "owl-theme",
+    autoHeight : false,
+    dragBeforeAnimFinish : true,
+    mouseDrag : true,
+    touchDrag : true
+
+  });
+
+});
+/*Настройки 2 слайдера*/
+$(document).ready(function() {
+
+  $("#owl-example2").owlCarousel({
+    items : 1,
+    navigation : true,
+    navigationText : ["prev","next"],
+    rewindNav : true,
+    pagination : false,
+    paginationNumbers: false,
+    baseClass : "owl-carousel",
+    theme : "owl-theme"
+  });
+
+});

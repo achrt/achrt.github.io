@@ -1,0 +1,36 @@
+.pix__docs__tabs {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	height: 300px;
+	overflow: visible;
+	text-align: center;
+	&-li{
+		display: inline-block;
+		line-height: 30px;
+		a{
+			text-decoration: none;
+			display: inline-block;
+			padding: 0px 12px;
+			white-space: nowrap;
+			&:hover{
+				border-bottom: none;
+			}
+			& .active-tab{
+				background: #fff;
+				border-bottom: 0 none;
+			}
+		}
+	}
+}
+.tab {
+	height: 29px;
+}
+.content-tab {
+	margin: -1px 0 0 0;
+	padding: 20px;
+}
+.docs__tabs {
+	height: 300px;
+	overflow: hidden;
+}
