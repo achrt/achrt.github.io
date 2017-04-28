@@ -1,36 +1,113 @@
-.pix__docs__tabs {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	height: 300px;
-	overflow: visible;
-	text-align: center;
-	&-li{
-		display: inline-block;
-		line-height: 30px;
-		a{
-			text-decoration: none;
-			display: inline-block;
-			padding: 0px 12px;
-			white-space: nowrap;
-			&:hover{
-				border-bottom: none;
-			}
-			& .active-tab{
-				background: #fff;
-				border-bottom: 0 none;
-			}
+.flat__tabs__li{
+	font-size: 16px;
+	font-family: fontFamilyS;
+	cursor: pointer;
+	text-transform: uppercase;
+	padding: 10px 25px;
+}
+.flat__tabs__li.active{
+	/*border-bottom: 2px solid freshOrange;*/
+	box-shadow:0 6px 0px -3px freshOrange;
+}
+.flats__label {
+	width: 155px;
+	cursor: pointer;
+}
+.flats__input {
+	display: none;
+}
+.label__style {
+	display: block;
+	width: 20px;
+	height: 20px;
+	border: 1px solid lightGray;
+	float: left;
+	margin: 0 5px 0 0;
+	position: relative;
+}
+.flats__label.activeFlats .label__style:after {
+	content: " ";
+	position: absolute;
+	left: 3px;
+	right: 3px;
+	top: 3px;
+	bottom: 2px;
+	background: freshOrange;
+}
+/*таблица квартир*/
+.flat{
+	&__outline{
+		border: 1px solid lightGray;
+		padding-left: 10px;
+		font-family: fontFamily;
+		font-size: 16px;
+		font-weight: bold;
+		margin: 2px auto;
+		cursor: pointer;
+	}
+	&__ordered{
+		border: 3px solid freshOrange;
+		color: lightGray;
+		cursor: not-allowed;
+	}
+	&__sold{
+		border: 2px solid bloodyRed;
+		color: lightGray;
+		cursor: not-allowed;
+	}
+	&__section{
+		margin: 60px auto;
+	}
+	&__span-gray{
+		color: lightGray;
+		border-left: 1px solid lightGray;
+		margin-left: 5px;
+		padding: 5px 10px;
+		font-family: fontFamilyS;
+		font-weight: normal;
+	}
+	&__status{
+		margin: 60px auto;
+		&__type-1{
+			padding: 10px 15px;
+			border: 1px solid lightGray;
+			margin: 0 5px 0 10px;
+		}
+		&__type-2{
+			padding: 10px 15px;
+			border: 2px solid freshOrange;
+			margin: 0 5px 0 10px;
+		}
+		&__type-3{
+			padding: 10px 15px;
+			border: 2px solid bloodyRed;
+			margin: 0 5px 0 10px;
+		}
+	}
+	&__single{
+		position:relative;
+		&-descr{
+			text-align: left;
+			display:none;
+		    padding: 20px 20px 0px 20px;
+		    background-color: white;
+		    width: 280px;
+		    height: 320px;
+		    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+		    &-p{
+		    	font-size: 14px;
+		    	font-weight: normal;
+		    }
+		    &-img{
+		    	text-align: center;
+		    	margin: 10px;
+		    }
 		}
 	}
 }
-.tab {
-	height: 29px;
-}
-.content-tab {
-	margin: -1px 0 0 0;
-	padding: 20px;
-}
-.docs__tabs {
-	height: 300px;
-	overflow: hidden;
+.flat__single:hover .flat__single-descr{
+	display: block;
+    position: absolute;
+    top: 40px;
+    z-index: 5;
 }

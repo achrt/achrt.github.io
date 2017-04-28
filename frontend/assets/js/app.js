@@ -43,7 +43,6 @@ $(document).ready(function() {
     dragBeforeAnimFinish : true,
     mouseDrag : true,
     touchDrag : true
-
   });
 
 });
@@ -52,13 +51,60 @@ $(document).ready(function() {
 
   $("#owl-example2").owlCarousel({
     items : 1,
+    autoPlay : false,
     navigation : true,
     navigationText : ["prev","next"],
     rewindNav : true,
     pagination : false,
     paginationNumbers: false,
     baseClass : "owl-carousel",
-    theme : "owl-theme"
+    theme : "owl-theme",
+    autoHeight : false,
+    dragBeforeAnimFinish : true,
+    mouseDrag : true,
+    touchDrag : true
   });
 
 });
+/*табы*/
+$(function(){
+$('.flat__tabs__li').not('.active').click(function(){
+    var index = $(this).index();
+    var content = $('.flat__tabs .content__tab').eq(index);
+    $(this).addClass('active').siblings().removeClass('active');
+    $('.flat__tabs .content__tab').css('display', 'none').eq(index).css('display', 'block');
+})
+    $('.flat__tabs__li:first').addClass('active');
+    $('.flat__tabs .content__tab:first').css('display', 'block');
+
+});
+/*Радиокнопки*/
+$(document).ready(function () {
+    $('label').click(function() {
+        $('.activeFlats').removeClass("activeFlats");
+        $(this).addClass("activeFlats");
+    });
+});
+$(document).ready(function() {
+    $('#single').click(function() {
+        $('.flat__single').removeClass('g-invisible');
+        $('.flat__double').addClass('g-invisible');
+        $('.flat__triple').addClass('g-invisible');
+    });
+    $('#double').click(function() {
+        $('.flat__single').addClass('g-invisible');
+        $('.flat__double').removeClass('g-invisible');
+        $('.flat__triple').addClass('g-invisible');
+    });
+    $('#triple').click(function() {
+        $('.flat__single').addClass('g-invisible');
+        $('.flat__double').addClass('g-invisible');
+        $('.flat__triple').removeClass('g-invisible');
+    });
+    $('#all').click(function() {
+        $('.flat__single').removeClass('g-invisible');
+        $('.flat__double').removeClass('g-invisible');
+        $('.flat__triple').removeClass('g-invisible');
+    });
+});
+

@@ -13,10 +13,10 @@
 			<div class="header__shapeBlock">
 				<i class="header__shapeBlock__arrow-left g-inline g-float_left"></i>
 				<p class="header__shapeBlock__nextHouse g-inline g-float_left">пр. Комсомольский, 44</p>
-				<div class="block__title g-inline">
+				<div class="header__title g-inline">
 					<span class="title__rectangle angle_1 g-inline"></span>
 					<span class="title__Rectangle-19 g-inline"></span>
-					<p class="title__name g-inline">Дом</p>
+					<h3 class="title__name g-inline">Дом</h3>
 					<span class="title__Rectangle-19 g-inline"></span>
 					<span class="title__rectangle angle_2 g-inline"></span>
 				</div>
@@ -24,31 +24,34 @@
 				<i class="header__shapeBlock__arrow-right g-inline g-float_right"></i>
 			</div>
 			<!--Блок с изображением-->
-			<div class="header__container">
-				<img src="images/1.png" alt="Дом 44 на Комсомольском" class="header__container-background">
-				<!--Сложить все в один блок и выровнять марджинами в процентах(?)-->
-				<div class="header__container-inner">
-					<div class="inner__div-h1">
-						<h1 class="header__container__h1">Комсомольский, 44</h1>
-						<p class="g-description">Жилой дом</p>
-					</div>
-					<div class="inner__div-p">
-						<p class="header__container__sale">Скидка 10%</p>
-						<p class="g-description">действует до 20.11.2016</p>
-					</div>
-				</div>
-				<!--Навигация-->
-				<div class="header__container__nav">
-					<ul>
-						<li class="nav__item g-inline"><a href="#" class="g-link g-description">Описание</a></li>
-						<li class="nav__item g-inline"><a href="#" class="g-link g-description">Инфраструктура</a></li>
-						<li class="nav__item g-inline"><a href="#" class="g-link g-description">Ход строительства</a></li>
-						<li class="nav__item g-inline"><a href="#" class="g-link g-description">Квартиры в прождаже</a></li>
-						<li class="nav__item g-inline"><a href="#" class="g-link g-description">Паркинг</a></li>
-						<li class="nav__item g-inline"><a href="#" class="g-link g-description">Документы</a></li>
-					</ul>
-				</div>
-			</div>
+			<section class="header__container" id="home">
+			    <div class="header__container__opacity"></div> <!-- Opacity color -->
+			      <div class="header__container__opacity__content">
+			        <div class="header__container__opacity__content__text">
+			        
+			          <div class="header__container-inner">
+			            <div class="inner__div-h1">
+			                <h1 class="header__container__h1">Комсомольский, 44</h1>
+			                <p class="g-description">Жилой дом</p>
+			            </div>
+			            <div class="inner__div-p">
+			                <p class="header__container__sale">Скидка 10%</p>
+			                <p class="g-description">действует до 20.11.2016</p>
+			            </div>
+			        </div>
+			        <div class="header__container__nav">
+			            <ul>
+			                <li class="nav__item g-inline"><a href="#" class="g-link g-description">Описание</a></li>
+			                <li class="nav__item g-inline"><a href="#" class="g-link g-description">Инфраструктура</a></li>
+			                <li class="nav__item g-inline"><a href="#" class="g-link g-description">Ход строительства</a></li>
+			                <li class="nav__item g-inline"><a href="#" class="g-link g-description">Квартиры в прождаже</a></li>
+			                <li class="nav__item g-inline"><a href="#" class="g-link g-description">Паркинг</a></li>
+			                <li class="nav__item g-inline"><a href="#" class="g-link g-description">Документы</a></li>
+			            </ul>
+			        </div>
+			        </div>
+			      </div>
+  			</section>
 		</header>
 		<!--Описание проекта-->
 		<section class="declaration">
@@ -67,9 +70,9 @@
 				</li>
 			</ul>
 			<!--Абзацы-->
-			<div class="declaration__text">
-				<p class="declaration__text-p g-inline">Жилой комплекс расположен в Октябрьском районе г. Барнаула на пересечении улиц: ул. Путиловская и пр. Комсомольский. Представляет собой четыре секции жилого дома переменной этажности (секция №2, №3, №4, №5). На территории двора размещенны все необходимые площадки: для подвижных игра детей, отдыха взрослого населения, спортивные  и хозяйственные.</p>
-				<p class="declaration__text-p g-inline">Фасады дома с витражным остеклением делают жилой комплекс ярким и неповторимым. Фасадная отделка представляет собой комбинацию кирпича и штукатурки. На высоту первых четырех этажей отделочный материал представлен облицовочным керамическим кирпичом двух видов (красный и «хамелеон» ), выше четвертого этажа отделка выполненна полимерной штукатуркой  с последующей окраской.</p>
+			<div class="declaration__text clearfix">
+				<p class="declaration__text-p g-inline g-float_left">Жилой комплекс расположен в Октябрьском районе г. Барнаула на пересечении улиц: ул. Путиловская и пр. Комсомольский. Представляет собой четыре секции жилого дома переменной этажности (секция №2, №3, №4, №5). На территории двора размещенны все необходимые площадки: для подвижных игра детей, отдыха взрослого населения, спортивные  и хозяйственные.</p>
+				<p class="declaration__text-p g-inline g-float_right">Фасады дома с витражным остеклением делают жилой комплекс ярким и неповторимым. Фасадная отделка представляет собой комбинацию кирпича и штукатурки. На высоту первых четырех этажей отделочный материал представлен облицовочным керамическим кирпичом двух видов (красный и «хамелеон» ), выше четвертого этажа отделка выполненна полимерной штукатуркой  с последующей окраской.</p>
 			</div>
 			<!--Блок с картинками-->
 			<div class="declaration__pic">
@@ -86,7 +89,7 @@
 			<div class="block__title g-inline">
 				<span class="title__rectangle angle_1 g-inline"></span>
 				<span class="title__Rectangle-19 g-inline"></span>
-				<p class="title__name g-inline">Инфраструктура</p>
+				<h3 class="title__name g-inline">Инфраструктура</h3>
 				<span class="title__Rectangle-19 g-inline"></span>
 				<span class="title__rectangle angle_2 g-inline"></span>
 			</div>
@@ -97,7 +100,7 @@
 			<div class="block__title g-inline">
 				<span class="title__rectangle angle_1 g-inline"></span>
 				<span class="title__Rectangle-19 g-inline"></span>
-				<p class="title__name g-inline">Ход строительства</p>
+				<h3 class="title__name g-inline">Ход строительства</h3>
 				<span class="title__Rectangle-19 g-inline"></span>
 				<span class="title__rectangle angle_2 g-inline"></span>
 			</div>
@@ -121,7 +124,7 @@
 					<div class="block__title g-inline">
 						<span class="title__rectangle angle_1 g-inline"></span>
 						<span class="title__Rectangle-19 g-inline"></span>
-						<p class="title__name g-inline">Планировки этажей</p>
+						<h3 class="title__name g-inline">Планировки этажей</h3>
 						<span class="title__Rectangle-19 g-inline"></span>
 						<span class="title__rectangle angle_2 g-inline"></span>
 					</div>
@@ -142,96 +145,182 @@
 			<div class="block__title g-inline">
 				<span class="title__rectangle angle_1 g-inline"></span>
 				<span class="title__Rectangle-19 g-inline"></span>
-				<p class="title__name g-inline">Квартиры в продаже</p>
+				<h3 class="title__name g-inline">Квартиры в продаже</h3>
 				<span class="title__Rectangle-19 g-inline"></span>
 				<span class="title__rectangle angle_2 g-inline"></span>
 			</div>
-			<div class="flat__tabs">
-			    <ul class="pix__flat__tabs" id="first-flat-tab">
-			    	<li class="pix__flat__tabs-li"><a href="#first-flat-tab" class="active-tab">Секция 1</a></li>
-			        <li class="pix__flat__tabs-li"><a href="#second-flat-tab" class="tab">Секция 2</a></li>
-			        <div class="content-tab">
-			        	<form action="" class="flats__form">
-			        		<p class="g-inline"><input type="radio" value="all" name="all-Fl" class="radio-style"></p>
-			        		<p class="g-inline"><input type="radio" value="single" name="all-Fl" class="radio-style"></p>
-			        		<p class="g-inline"><input type="radio" value="double" name="all-Fl" class="radio-style"></p>
-			        		<p class="g-inline"><input type="radio" value="triple" name="all-Fl" class="radio-style"></p>
-			        	</form>
-			        	<section class="flat__section">
-			        		<div class="flat__section-1">
-			        			<div class="g-inline"><p>1</p></div>
-			        			<div class="g-inline"><span class="g-inline">71</span><span class="g-inline g-lightGray">48,34</span></div>
-			        			<div class="g-inline"><span class="g-inline">72</span><span class="g-inline g-lightGray">48,34</span></div>
-			        			<div class="g-inline"><span class="g-inline">73</span><span class="g-inline g-lightGray">48,34</span></div>
-			        			<div class="g-inline"><span class="g-inline">74</span><span class="g-inline g-lightGray">48,34</span></div>
-			        			<div class="g-inline"><span class="g-inline">75</span><span class="g-inline g-lightGray">48,34</span></div>
-			        			<div class="g-inline"><span class="g-inline">76</span><span class="g-inline g-lightGray">48,34</span></div>
-			        			<div class="g-inline"><span class="g-inline">77</span><span class="g-inline g-lightGray">48,34</span></div>
-			        			<div class="g-inline"><span class="g-inline">78</span><span class="g-inline g-lightGray">48,34</span></div>
-			        		</div>
-			        		<div class="flat__section-2">
-			        			<div class="g-inline"><p>1</p></div>
-			        			<div class="g-inline"><span class="g-inline">62</span><span class="g-inline g-lightGray">76,34</span></div>
-			        			<div class="g-inline"><span class="g-inline">63</span><span class="g-inline g-lightGray">76,34</span></div>
-			        			<div class="g-inline"><span class="g-inline">64</span><span class="g-inline g-lightGray">76,34</span></div>
-			        			<div class="g-inline"><span class="g-inline">65</span><span class="g-inline g-lightGray">76,34</span></div>
-			        			<div class="g-inline"><span class="g-inline">66</span><span class="g-inline g-lightGray">76,34</span></div>
-			        			<div class="g-inline"><span class="g-inline">67</span><span class="g-inline g-lightGray">76,34</span></div>
-			        			<div class="g-inline"><span class="g-inline">68</span><span class="g-inline g-lightGray">76,34</span></div>
-			        			<div class="g-inline"><span class="g-inline">69</span><span class="g-inline g-lightGray">76,34</span></div>
-			        		</div>
-			        		<div class="flat__status">
-			        			<div><span class="status__type-1 g-inline"></span><p class="g-inline">- свободные квартиры</p></div>
-			        			<div><span class="status__type-2 g-inline"></span><p class="g-inline">- забронированные квартиры</p></div>
-			        			<div><span class="status__type-3 g-inline"></span><p class="g-inline">- проданные квартиры квартиры</p></div>
-			        		</div>
-			        	</section>
-			        </div> 
+			<div class="container">
+			    <ul class="flatTab__title">
+			        <li class="flat__tabs__li g-inline">Секция 1</li>
+			        <li class="flat__tabs__li g-inline">Секция 2</li>
 			    </ul>
-			    <!---->
-				<ul class="pix__flat__tabs" id="second-docs-tab">
-			    	<li class="pix__flat__tabs-li"><a href="#first-flat-tab" class="tab">Секция 1</a></li>
-			        <li class="pix__flat__tabs-li"><a href="#second-flat-tab" class="active-tab">Секция 2</a></li>
-			        <div class="content-tab">
-			        	<form action="" class="flats__form">
-			        		<p class="g-inline"><input type="radio" value="all" name="all-Fl" class="radio-style"></p>
-			        		<p class="g-inline"><input type="radio" value="single" name="all-Fl" class="radio-style"></p>
-			        		<p class="g-inline"><input type="radio" value="double" name="all-Fl" class="radio-style"></p>
-			        		<p class="g-inline"><input type="radio" value="triple" name="all-Fl" class="radio-style"></p>
-			        	</form>
-			        	<section class="flat__section">
-			        		<div class="flat__section-1">
-			        			<div class="g-inline"><p>1</p></div>
-			        			<div class="g-inline"><span class="g-inline">71</span><span class="g-inline g-lightGray">48,34</span></div>
-			        			<div class="g-inline"><span class="g-inline">72</span><span class="g-inline g-lightGray">48,34</span></div>
-			        			<div class="g-inline"><span class="g-inline">73</span><span class="g-inline g-lightGray">48,34</span></div>
-			        			<div class="g-inline"><span class="g-inline">74</span><span class="g-inline g-lightGray">48,34</span></div>
-			        			<div class="g-inline"><span class="g-inline">75</span><span class="g-inline g-lightGray">48,34</span></div>
-			        			<div class="g-inline"><span class="g-inline">76</span><span class="g-inline g-lightGray">48,34</span></div>
-			        			<div class="g-inline"><span class="g-inline">77</span><span class="g-inline g-lightGray">48,34</span></div>
-			        			<div class="g-inline"><span class="g-inline">78</span><span class="g-inline g-lightGray">48,34</span></div>
-			        		</div>
-			        		<div class="flat__section-2">
-			        			<div class="g-inline"><p>1</p></div>
-			        			<div class="g-inline"><span class="g-inline">62</span><span class="g-inline g-lightGray">76,34</span></div>
-			        			<div class="g-inline"><span class="g-inline">63</span><span class="g-inline g-lightGray">76,34</span></div>
-			        			<div class="g-inline"><span class="g-inline">64</span><span class="g-inline g-lightGray">76,34</span></div>
-			        			<div class="g-inline"><span class="g-inline">65</span><span class="g-inline g-lightGray">76,34</span></div>
-			        			<div class="g-inline"><span class="g-inline">66</span><span class="g-inline g-lightGray">76,34</span></div>
-			        			<div class="g-inline"><span class="g-inline">67</span><span class="g-inline g-lightGray">76,34</span></div>
-			        			<div class="g-inline"><span class="g-inline">68</span><span class="g-inline g-lightGray">76,34</span></div>
-			        			<div class="g-inline"><span class="g-inline">69</span><span class="g-inline g-lightGray">76,34</span></div>
-			        		</div>
-			        		<div class="flat__status">
-			        			<div><span class="status__type-1 g-inline"></span><p class="g-inline">- свободные квартиры</p></div>
-			        			<div><span class="status__type-2 g-inline"></span><p class="g-inline">- забронированные квартиры</p></div>
-			        			<div><span class="status__type-3 g-inline"></span><p class="g-inline">- проданные квартиры квартиры</p></div>
-			        		</div>
-			        	</section>
-			        </div> 
-			    </ul>
+			    <div class="flat__tabs">
+			        <div class="content__tab">
+			            <form action="" class="flats__form">
+			                <label class="g-inline flats__label activeFlats" id="all">
+			                	<span class="g-inline g-vAlignBottom">все квартиры</span>		
+			                	<span class="label__style"></span>
+			                	<input type="radio" value="all" name="all-Fl" class="flats__input" checked>
+			                </label>
+			                <label class="g-inline flats__label" id="single">
+			                	<span class="g-inline g-vAlignBottom">1 комнатные</span>
+			                	<span class="label__style"></span>
+			                	<input type="radio" value="single" name="all-Fl" class="flats__input">
+			                </label>
+			                <label class="g-inline flats__label" id="double">
+			                	<span class="g-inline g-vAlignBottom">2х комнатные</span>
+			                	<span class="label__style"></span>
+			                	<input type="radio" value="double" name="all-Fl" class="flats__input">
+			                </label>
+			                <label class="g-inline flats__label" id="triple">
+			                	<span class="g-inline g-vAlignBottom">3х комнатные</span>
+			                	<span class="label__style"></span>
+			                	<input type="radio" value="triple" name="all-Fl" class="flats__input">
+			                </label>
+			            </form>
+			            <section class="flat__section">
+			                <div class="flat__section-1">
+			                    <div class="g-inline g-lightGray"><p>1</p></div>
+			                    <!--1 комнатная-->
+			                    <div class="g-inline flat__outline flat__single">
+			                    	<span class="g-inline">71</span>
+			                    	<span class="g-inline flat__span-gray">48,34</span>
+			                    	<!--Выпадающий блок-->
+			                    	<div class="flat__single-descr">
+			                    		<p>Однокомнатная квартира</p>
+			                    		<p class="flat__single-descr-p">Свободна</p>
+			                    		<div class="flat__single-descr-img">
+			                    			<img src="images/flat.png" alt="однокомнатная">
+			                    		</div>
+			                    		<div>
+			                    			<span class="g-float_left">34.40 м2</span>
+			                    			<span class="g-float_right">1 200 000 ₽</span>
+			                    		</div>
+								    </div>
+			                    </div>
+			                    <!--2x комнатная-->
+			                    <div class="g-inline flat__outline flat__double">
+			                    	<span class="g-inline">72</span>
+			                    	<span class="g-inline flat__span-gray">48,34</span>
+			                    </div>
+			                    <!--2x комнатная-->
+			                    <div class="g-inline flat__outline flat__double">
+			                    	<span class="g-inline">73</span>
+			                    	<span class="g-inline flat__span-gray">48,34</span>
+			                    </div>
+			                    <!--1 комнатная-->
+			                    <div class="g-inline flat__outline flat__single">
+			                    	<span class="g-inline">74</span>
+			                    	<span class="g-inline flat__span-gray">48,34</span>
+			                    	<!--Выпадающий блок-->
+			                    	<div class="flat__single-descr">
+			                    		<p>Однокомнатная квартира</p>
+			                    		<p class="flat__single-descr-p">Свободна</p>
+			                    		<div class="flat__single-descr-img">
+			                    			<img src="images/flat.png" alt="однокомнатная">
+			                    		</div>
+			                    		<div>
+			                    			<span class="g-float_left">34.40 м2</span>
+			                    			<span class="g-float_right">1 200 000 ₽</span>
+			                    		</div>
+								    </div>
+			                    </div>
+			                    <!--3x комнатная-->
+			                    <div class="g-inline flat__outline flat__triple">
+			                    	<span class="g-inline">75</span>
+			                    	<span class="g-inline flat__span-gray">48,34</span>
+			                    </div>
+			                    <!--3x комнатная-->
+			                    <div class="g-inline flat__outline flat__triple">
+			                    	<span class="g-inline">76</span>
+			                    	<span class="g-inline flat__span-gray">48,34</span>
+			                    </div>
+			                    <!--3x комнатная-->
+			                    <div class="g-inline flat__outline flat__triple">
+			                    	<span class="g-inline">77</span>
+			                    	<span class="g-inline flat__span-gray">48,34</span>
+			                    </div>
+			                    <!--3x комнатная-->
+			                    <div class="g-inline flat__outline flat__triple">
+			                    	<span class="g-inline">78</span>
+			                    	<span class="g-inline flat__span-gray">48,34</span>
+			                    </div>
+			                </div>
+			                <div class="flat__section-2">
+			                    <div class="g-inline g-lightGray"><p>2</p></div>
+			                    <!--3x комнатная-->
+			                    <div class="g-inline flat__outline flat__triple">
+			                    	<span class="g-inline">62</span>
+			                    	<span class="g-inline flat__span-gray">76,34</span>
+			                    </div>
+			                    <!--3x комнатная-->
+			                    <div class="g-inline flat__outline flat__triple">
+			                    	<span class="g-inline">63</span>
+			                    	<span class="g-inline flat__span-gray">76,34</span>
+			                    </div>
+			                    <!--3x комнатная-->
+			                    <div class="g-inline flat__outline flat__triple">
+			                    	<span class="g-inline">64</span>
+			                    	<span class="g-inline flat__span-gray">76,34</span>
+			                    </div>
+			                    <!--1 комнатная-->
+			                    <div class="g-inline flat__outline flat__single">
+			                    	<span class="g-inline">65</span>
+			                    	<span class="g-inline flat__span-gray">76,34</span>
+			                    	<!--Выпадающий блок-->
+			                    	<div class="flat__single-descr">
+			                    		<p>Однокомнатная квартира</p>
+			                    		<p class="flat__single-descr-p">Свободна</p>
+			                    		<div class="flat__single-descr-img">
+			                    			<img src="images/flat.png" alt="однокомнатная">
+			                    		</div>
+			                    		<div>
+			                    			<span class="g-float_left">34.40 м2</span>
+			                    			<span class="g-float_right">1 200 000 ₽</span>
+			                    		</div>
+								    </div>
+			                    </div>
+			                    <!--2x комнатная-->
+			                    <div class="g-inline flat__outline flat__double">
+			                    	<span class="g-inline">66</span>
+			                    	<span class="g-inline flat__span-gray">76,34</span>
+			                    </div>
+			                    <!--2x комнатная-->
+			                    <div class="g-inline flat__outline flat__double">
+			                    	<span class="g-inline">67</span>
+			                    	<span class="g-inline flat__span-gray">76,34</span>
+			                    </div>
+			                    <!--1 комнатная-->
+			                    <div class="g-inline flat__outline flat__single">
+			                    	<span class="g-inline">68</span>
+			                    	<span class="g-inline flat__span-gray">76,34</span>
+			                    	<!--Выпадающий блок-->
+			                    	<div class="flat__single-descr">
+			                    		<p>Однокомнатная квартира</p>
+			                    		<p class="flat__single-descr-p">Свободна</p>
+			                    		<div class="flat__single-descr-img">
+			                    			<img src="images/flat.png" alt="однокомнатная">
+			                    		</div>
+			                    		<div>
+			                    			<span class="g-float_left">34.40 м2</span>
+			                    			<span class="g-float_right">1 200 000 ₽</span>
+			                    		</div>
+								    </div>
+			                    </div>
+			                    <!--3x комнатная-->
+			                    <div class="g-inline flat__outline flat__ordered flat__triple"><span class="g-inline">69</span><span class="g-inline flat__span-gray">76,34</span></div>
+			                </div>
+			                <!--Блок обозначений-->
+			                <div class="flat__status">
+			                    <div class="g-inline"><span class="flat__status__type-1 g-inline"></span><p class="g-inline g-description">- свободные квартиры</p></div>
+			                    <div class="g-inline"><span class="flat__status__type-2 g-inline"></span><p class="g-inline g-description">- забронированные квартиры</p></div>
+			                    <div class="g-inline"><span class="flat__status__type-3 g-inline"></span><p class="g-inline g-description">- проданные квартиры</p></div>
+			                </div>
+			            </section>
+			        </div>
+			    </div>
 			</div>
-		</section>
+        </section>
 		<!--Документы-->
 		<section class="docs">
 			<fieldset class="docs__border">
@@ -239,7 +328,7 @@
 					<div class="block__title g-inline">
 						<span class="title__rectangle angle_1 g-inline"></span>
 						<span class="title__Rectangle-19 g-inline"></span>
-						<p class="title__name g-inline">Документы</p>
+						<h3 class="title__name g-inline">Документы</h3>
 						<span class="title__Rectangle-19 g-inline"></span>
 						<span class="title__rectangle angle_2 g-inline"></span>
 					</div>
@@ -337,8 +426,8 @@
 			</fieldset>
 		</section>
 	</section>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgARucHlnVb4QK70MNQKX5MMdVc4sBbqI&callback=initMap" async defer></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgARucHlnVb4QK70MNQKX5MMdVc4sBbqI&callback=initMap" async defer></script>
 <script src="owl-carousel/owl.carousel.js"></script>
 <script src="js/app.js"></script>
 </body>

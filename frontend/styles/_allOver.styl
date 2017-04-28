@@ -1,5 +1,7 @@
 lightGray = #cbcbcb
 darkGray = #3c3c3c
+freshOrange = #fca74b
+bloodyRed = #d0011b;
 fontFamily = PT Serif
 fontFamilyS = PT Sans Narrow
 
@@ -8,10 +10,16 @@ body{
 	font-family: fontFamily;
 	color: darkGray;
 	max-width: 1640px;
+	height: 100%;
 	background-color: white;
 	padding: 40px;
 }
-p, h1, h3{
+.test{
+  position: absolute;
+  width: 1640px;
+  height: auto;
+}
+p, h1{
 	margin: 2px 0;
 }
 .g-link{
@@ -38,6 +46,20 @@ p, h1, h3{
 .g-float_left{
 	float: left;
 }
+.g-vAlignMiddle{
+	vertical-align: middle;
+}
+.g-vAlignBottom{
+	vertical-align: bottom;
+}
+.g-lightGray{
+	color: lightGray;
+}
+.g-invisible{
+	color: lightGray;
+	background-color: #b9b9b9;
+	cursor: not-allowed !important;
+}
 .header__shapeBlock{
 	max-height: 60px;
 	&__nextHouse{
@@ -46,12 +68,15 @@ p, h1, h3{
 		line-height: 1.85;
 	}
 }
+.block__title{
+	margin: 60px;
+}
 .title{
 	&__name{
 		font-size: 24px;
 		font-weight: bold;
 		line-height: 1;
-		margin: 0 25.9px;
+		margin: 0px 25.9px;
 	}
 	&__Rectangle-19{
 		width: 9px;
@@ -72,42 +97,5 @@ p, h1, h3{
 	}
 	&_2{
 	  	transform: translateX(-5px);
-	}
-}
-/*Изображение*/
-.header__container{
-	position: relative;
-	color: white;
-	&-background{
-		max-width: 1560px;
-		width: 100%;
-		object-fit: contain;
-	}
-	&__h1{
-		font-size: 28px;
-  		font-weight: bold;
-  		font-style: italic;
-	}
-	&__sale{
-		font-size: 28px;
-  		font-weight: bold;
-  		font-style: italic
-	}
-	&__nav{
-		position: absolute;
-		bottom: 0%;
-    	left: 18%;
-	}
-}
-.inner__div{
-	&-h1{
-		position: absolute;
-    	top: 20%;
-    	left: 37.8%;
-	}
-	&-p{
-		position: absolute;
-		top:50%;
-		left: 42%;
 	}
 }
