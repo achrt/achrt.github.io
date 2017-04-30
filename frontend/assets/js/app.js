@@ -90,7 +90,7 @@ $(function(){
     });
 /*Радиокнопки*/
 $(document).ready(function () {
-    $('label').click(function() {
+    $('.flats__label').click(function() {
         $('.activeFlats').removeClass("activeFlats");
         $(this).addClass("activeFlats");
     });
@@ -115,6 +115,16 @@ $(document).ready(function() {
         $('.flat__single').removeClass('g-invisible');
         $('.flat__double').removeClass('g-invisible');
         $('.flat__triple').removeClass('g-invisible');
+    });
+});
+/*Модальное окно*/
+$(document).ready(function() {
+    $('.popup .close__window, .overlay').click(function (){
+    $('.popup, .overlay').css({'opacity': 0, 'visibility': 'hidden'});
+    });
+    $('a.open__window').click(function (e){
+    $('.popup, .overlay').css({'opacity': 1, 'visibility': 'visible'});
+    e.preventDefault();
     });
 });
 

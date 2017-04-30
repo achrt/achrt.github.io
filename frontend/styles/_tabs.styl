@@ -42,7 +42,6 @@
 .flat{
 	&__outline{
 		border: borderGray;
-		padding-left: 10px;
 		font-family: fontFamily;
 		font-size: 16px;
 		font-weight: bold;
@@ -53,7 +52,12 @@
 		border: 2px solid freshOrange;
 		color: lightGray;
 		cursor: not-allowed;
-		padding: 0 3px 0 9px;
+		&__span-gray{
+			padding: 9px 12px 9px 10px !important;
+		}
+		&__span-black{
+			padding: 10px 8px 9px 8px !important;
+		}
 	}
 	&__sold{
 		border: 2px solid bloodyRed;
@@ -67,10 +71,12 @@
 	&__span-gray{
 		color: lightGray;
 		border-left: borderGray;
-		margin-left: 5px;
-		padding: 5px 10px;
+		padding: 10px;
 		font-family: fontFamilyS;
 		font-weight: normal;
+	}
+	&__span-black{
+		padding: 10px;
 	}
 	&__status{
 		margin: 60px auto;
@@ -120,6 +126,7 @@
 /*Документы*/
 .docs{
 	margin: auto;
+	font-family: fontFamily;
 	&__border{
 		border: borderGray;
 	}
@@ -128,14 +135,15 @@
 		font-family: fontFamilyS;
 		cursor: pointer;
 		text-transform: uppercase;
-		padding: 10px 25px;
-		margin: 0 10px 50px;
+		padding: 10px 5px;
+		margin: 0 30px 50px;
 	}
 	&__icon{
 		@extend $images--docs;
+		margin: 30px;
 	}
-	&__tabs__iconSet__li{
-		max-width: 310px;
+	&__tabs__iconSet__span{
+		width: 310px;
 	}
 }
 .second{
