@@ -78,6 +78,16 @@ $('.flat__tabs__li').not('.active').click(function(){
     $('.flat__tabs .content__tab:first').css('display', 'block');
 
 });
+$(function(){
+    $('.docs__tab__title__li').not('.active').click(function(){
+        var index = $(this).index();
+        var content = $('.docs__tab__content').eq(index);
+        $(this).addClass('active').siblings().removeClass('active');
+        $('.docs__tab__content').css('display', 'none').eq(index).css('display', 'block');
+    })
+        $('.docs__tab__title__li:first').addClass('active');
+        $('.docs__tab__content:first').css('display', 'block');
+    });
 /*Радиокнопки*/
 $(document).ready(function () {
     $('label').click(function() {

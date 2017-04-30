@@ -1,3 +1,7 @@
+.header{
+  max-width: 1560px;
+  margin: auto;
+}
 .header__container{
   position:relative;
   width: 1560px;
@@ -41,13 +45,24 @@
   }
 }
 .inner__div{
-  &__h1{
-    margin: 10% auto;
+  &-h1{
+    margin: 12% auto;
   }
-  &__p{
-    margin: 20% auto;
+  &-p{
+    margin: 25% auto;
   }
 }
 .header__container__nav{
   margin: 30% auto 10%;
+}
+.header__shapeBlock{
+  margin: 60px auto;
+  &__arrow-left{
+    @extend $images--arrow_left;
+    margin: 10px;
+  }
+  &__arrow-right{
+    @extend $images--arrow_right;
+    margin: 10px;
+  }
 }

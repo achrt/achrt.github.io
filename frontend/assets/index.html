@@ -11,8 +11,10 @@
 		<header class="header">
 			<!--Верхний блок со стрелками-->
 			<div class="header__shapeBlock">
-				<i class="header__shapeBlock__arrow-left g-inline g-float_left"></i>
-				<p class="header__shapeBlock__nextHouse g-inline g-float_left">пр. Комсомольский, 44</p>
+				<a href="#" class="g-float_left">
+					<i class="header__shapeBlock__arrow-left g-inline"></i>
+					<p class="header__shapeBlock__nextHouse g-inline">пр. Комсомольский, 44</p>
+				</a>
 				<div class="header__title g-inline">
 					<span class="title__rectangle angle_1 g-inline"></span>
 					<span class="title__Rectangle-19 g-inline"></span>
@@ -20,8 +22,10 @@
 					<span class="title__Rectangle-19 g-inline"></span>
 					<span class="title__rectangle angle_2 g-inline"></span>
 				</div>
-				<p class="header__shapeBlock__nextHouse g-inline g-float_right">пр. Комсомольский, 108</p>
-				<i class="header__shapeBlock__arrow-right g-inline g-float_right"></i>
+				<a href="#" class="g-float_right">
+					<p class="header__shapeBlock__nextHouse g-inline">пр. Комсомольский, 108</p>
+					<i class="header__shapeBlock__arrow-right g-inline"></i>
+				</a>
 			</div>
 			<!--Блок с изображением-->
 			<section class="header__container" id="home">
@@ -104,7 +108,7 @@
 				<span class="title__Rectangle-19 g-inline"></span>
 				<span class="title__rectangle angle_2 g-inline"></span>
 			</div>
-			<!--Карусель (! скрипт не подключен)-->
+			<!--Карусель-->
 			<div class="progress__slider">
 				<div class="slider__reactangle"></div>
 				<div id="owl-example" class="owl-carousel">
@@ -318,6 +322,170 @@
 			                </div>
 			            </section>
 			        </div>
+			        <!--СЕКЦИЯ 2 (!!!!!!!!!!!!!!!!!!!)-->
+			        <div class="content__tab">
+			            <form action="" class="flats__form">
+			                <label class="g-inline flats__label activeFlats" id="all">
+			                	<span class="g-inline g-vAlignBottom">все квартиры</span>		
+			                	<span class="label__style"></span>
+			                	<input type="radio" value="all" name="all-Fl" class="flats__input" checked>
+			                </label>
+			                <label class="g-inline flats__label" id="single">
+			                	<span class="g-inline g-vAlignBottom">1 комнатные</span>
+			                	<span class="label__style"></span>
+			                	<input type="radio" value="single" name="all-Fl" class="flats__input">
+			                </label>
+			                <label class="g-inline flats__label" id="double">
+			                	<span class="g-inline g-vAlignBottom">2х комнатные</span>
+			                	<span class="label__style"></span>
+			                	<input type="radio" value="double" name="all-Fl" class="flats__input">
+			                </label>
+			                <label class="g-inline flats__label" id="triple">
+			                	<span class="g-inline g-vAlignBottom">3х комнатные</span>
+			                	<span class="label__style"></span>
+			                	<input type="radio" value="triple" name="all-Fl" class="flats__input">
+			                </label>
+			            </form>
+			            <section class="flat__section">
+			                <div class="flat__section-1">
+			                    <div class="g-inline g-lightGray"><p>1</p></div>
+			                    <!--1 комнатная-->
+			                    <div class="g-inline flat__outline flat__single">
+			                    	<span class="g-inline">71</span>
+			                    	<span class="g-inline flat__span-gray">48,34</span>
+			                    	<!--Выпадающий блок-->
+			                    	<div class="flat__single-descr">
+			                    		<p>Однокомнатная квартира</p>
+			                    		<p class="flat__single-descr-p">Свободна</p>
+			                    		<div class="flat__single-descr-img">
+			                    			<img src="images/flat.png" alt="однокомнатная">
+			                    		</div>
+			                    		<div>
+			                    			<span class="g-float_left">34.40 м2</span>
+			                    			<span class="g-float_right">1 200 000 ₽</span>
+			                    		</div>
+								    </div>
+			                    </div>
+			                    <!--2x комнатная-->
+			                    <div class="g-inline flat__outline flat__double flat__sold">
+			                    	<span class="g-inline">72</span>
+			                    	<span class="g-inline flat__span-gray">48,34</span>
+			                    </div>
+			                    <!--2x комнатная-->
+			                    <div class="g-inline flat__outline flat__double">
+			                    	<span class="g-inline">73</span>
+			                    	<span class="g-inline flat__span-gray">48,34</span>
+			                    </div>
+			                    <!--1 комнатная-->
+			                    <div class="g-inline flat__outline flat__single">
+			                    	<span class="g-inline">74</span>
+			                    	<span class="g-inline flat__span-gray">48,34</span>
+			                    	<!--Выпадающий блок-->
+			                    	<div class="flat__single-descr">
+			                    		<p>Однокомнатная квартира</p>
+			                    		<p class="flat__single-descr-p">Свободна</p>
+			                    		<div class="flat__single-descr-img">
+			                    			<img src="images/flat.png" alt="однокомнатная">
+			                    		</div>
+			                    		<div>
+			                    			<span class="g-float_left">34.40 м2</span>
+			                    			<span class="g-float_right">1 200 000 ₽</span>
+			                    		</div>
+								    </div>
+			                    </div>
+			                    <!--3x комнатная-->
+			                    <div class="g-inline flat__outline flat__triple">
+			                    	<span class="g-inline">75</span>
+			                    	<span class="g-inline flat__span-gray">48,34</span>
+			                    </div>
+			                    <!--3x комнатная-->
+			                    <div class="g-inline flat__outline flat__triple">
+			                    	<span class="g-inline">76</span>
+			                    	<span class="g-inline flat__span-gray">48,34</span>
+			                    </div>
+			                    <!--3x комнатная-->
+			                    <div class="g-inline flat__outline flat__triple">
+			                    	<span class="g-inline">77</span>
+			                    	<span class="g-inline flat__span-gray">48,34</span>
+			                    </div>
+			                    <!--3x комнатная-->
+			                    <div class="g-inline flat__outline flat__triple">
+			                    	<span class="g-inline">78</span>
+			                    	<span class="g-inline flat__span-gray">48,34</span>
+			                    </div>
+			                </div>
+			                <div class="flat__section-2">
+			                    <div class="g-inline g-lightGray"><p>2</p></div>
+			                    <!--3x комнатная-->
+			                    <div class="g-inline flat__outline flat__triple">
+			                    	<span class="g-inline">62</span>
+			                    	<span class="g-inline flat__span-gray">76,34</span>
+			                    </div>
+			                    <!--3x комнатная-->
+			                    <div class="g-inline flat__outline flat__triple">
+			                    	<span class="g-inline">63</span>
+			                    	<span class="g-inline flat__span-gray">76,34</span>
+			                    </div>
+			                    <!--3x комнатная-->
+			                    <div class="g-inline flat__outline flat__triple">
+			                    	<span class="g-inline">64</span>
+			                    	<span class="g-inline flat__span-gray">76,34</span>
+			                    </div>
+			                    <!--1 комнатная-->
+			                    <div class="g-inline flat__outline flat__single">
+			                    	<span class="g-inline">65</span>
+			                    	<span class="g-inline flat__span-gray">76,34</span>
+			                    	<!--Выпадающий блок-->
+			                    	<div class="flat__single-descr">
+			                    		<p>Однокомнатная квартира</p>
+			                    		<p class="flat__single-descr-p">Свободна</p>
+			                    		<div class="flat__single-descr-img">
+			                    			<img src="images/flat.png" alt="однокомнатная">
+			                    		</div>
+			                    		<div>
+			                    			<span class="g-float_left">34.40 м2</span>
+			                    			<span class="g-float_right">1 200 000 ₽</span>
+			                    		</div>
+								    </div>
+			                    </div>
+			                    <!--2x комнатная-->
+			                    <div class="g-inline flat__outline flat__double">
+			                    	<span class="g-inline">66</span>
+			                    	<span class="g-inline flat__span-gray">76,34</span>
+			                    </div>
+			                    <!--2x комнатная-->
+			                    <div class="g-inline flat__outline flat__double">
+			                    	<span class="g-inline">67</span>
+			                    	<span class="g-inline flat__span-gray">76,34</span>
+			                    </div>
+			                    <!--1 комнатная-->
+			                    <div class="g-inline flat__outline flat__single">
+			                    	<span class="g-inline">68</span>
+			                    	<span class="g-inline flat__span-gray">76,34</span>
+			                    	<!--Выпадающий блок-->
+			                    	<div class="flat__single-descr">
+			                    		<p>Однокомнатная квартира</p>
+			                    		<p class="flat__single-descr-p">Свободна</p>
+			                    		<div class="flat__single-descr-img">
+			                    			<img src="images/flat.png" alt="однокомнатная">
+			                    		</div>
+			                    		<div>
+			                    			<span class="g-float_left">34.40 м2</span>
+			                    			<span class="g-float_right">1 200 000 ₽</span>
+			                    		</div>
+								    </div>
+			                    </div>
+			                    <!--3x комнатная-->
+			                    <div class="g-inline flat__outline flat__ordered flat__triple"><span class="g-inline">69</span><span class="g-inline flat__span-gray">76,34</span></div>
+			                </div>
+			                <!--Блок обозначений-->
+			                <div class="flat__status">
+			                    <div class="g-inline"><span class="flat__status__type-1 g-inline"></span><p class="g-inline g-description">- свободные квартиры</p></div>
+			                    <div class="g-inline"><span class="flat__status__type-2 g-inline"></span><p class="g-inline g-description">- забронированные квартиры</p></div>
+			                    <div class="g-inline"><span class="flat__status__type-3 g-inline"></span><p class="g-inline g-description">- проданные квартиры</p></div>
+			                </div>
+			            </section>
+			        </div>
 			    </div>
 			</div>
         </section>
@@ -335,92 +503,73 @@
 		  		</legend>
 		  		<!--Секция с табами-->
 		  		<div class="docs__tabs">
-				    <ul class="pix__docs__tabs" id="first-docs-tab">
-				    	<li class="pix__docs__tabs-li"><a href="#first-docs-tab" class="active-tab">Документы объекта</a></li>
-				        <li class="pix__docs__tabs-li"><a href="#second-docs-tab" class="tab">Финансовые документы</a></li>
-				        <li class="pix__docs__tabs-li"><a href="#third-docs-tab" class="tab">Форма договора долевого участия</a></li>
-				        <li class="pix__docs__tabs-li"><a href="#forth-docs-tab" class="tab">Паркинг</a></li>
-				        <div class="content-tab">
-				        	<ul class="docs__tabs__iconSet">
-				        		<li class="g-inline">
-				        			<div><i class="g-inline doc__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Проектная декларация</span></div>
-				        			<div><i class="g-inline doc__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Разрешение на строительство</span></div>
-				        		</li>
-				        		<li class="g-inline">
-				        			<div><i class="g-inline doc__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Изменения в ПД</span></div>
-				        			<div><i class="g-inline doc__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Свидетельство о государственной регистрации права собственности на земельный участок</span></div>
-				        		</li>
-				        		<li class="g-inline">
-				        			<div><i class="g-inline doc__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Проектная декларация</span></div>
-				        		</li>
-				        	</ul>
-				        </div> 
+				    <ul class="docs__tab__title">
+				        <li class="docs__tab__title__li g-inline">Документы объекта</li>
+				        <li class="docs__tab__title__li g-inline">Финансовые документы</li>
+				        <li class="docs__tab__title__li g-inline">Форма договора долевого участия</li>
+				        <li class="docs__tab__title__li g-inline">Паркинг</li>
 				    </ul>
-				    <!---->
-					<ul class="pix__docs__tabs" id="second-docs-tab">
-				    	<li class="pix__docs__tabs-li"><a href="#first-docs-tab" class="tab">Документы объекта</a></li>
-				        <li class="pix__docs__tabs-li"><a href="#second-docs-tab" class="active-tab">Финансовые документы</a></li>
-				        <li class="pix__docs__tabs-li"><a href="#third-docs-tab" class="tab">Форма договора долевого участия</a></li>
-				        <li class="pix__docs__tabs-li"><a href="#forth-docs-tab" class="tab">Паркинг</a></li> 
-				        <div class="content-tab">
-				        	<ul class="docs__tabs__iconSet">
-				        		<li class="g-inline">
-				        			<div><i class="g-inline doc__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Проектная декларация</span></div>
-				        			<div><i class="g-inline doc__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Разрешение на строительство</span></div>
-				        		</li>
-				        		<li class="g-inline">
-				        			<div><i class="g-inline doc__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Изменения в ПД</span></div>
-				        			<div><i class="g-inline doc__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Свидетельство о государственной регистрации права собственности на земельный участок</span></div>
-				        		</li>
-				        		<li class="g-inline">
-				        			<div><i class="g-inline doc__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Проектная декларация</span></div>
-				        		</li>
-				        	</ul>
-				        </div> 
-				    </ul>
-				    <!---->
-					<ul class="pix__docs__tabs" id="third-docs-tab">
-				    	<li class="pix__docs__tabs-li"><a href="#first-docs-tab" class="tab">Документы объекта</a></li>
-				        <li class="pix__docs__tabs-li"><a href="#second-docs-tab" class="tab">Финансовые документы</a></li>
-				        <li class="pix__docs__tabs-li"><a href="#third-docs-tab" class="active-tab">Форма договора долевого участия</a></li>
-				        <li class="pix__docs__tabs-li"><a href="#forth-docs-tab" class="tab">Паркинг</a></li> 
-				        <div class="content-tab">
-				        	<ul class="docs__tabs__iconSet">
-				        		<li class="g-inline">
-				        			<div><i class="g-inline doc__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Проектная декларация</span></div>
-				        			<div><i class="g-inline doc__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Разрешение на строительство</span></div>
-				        		</li>
-				        		<li class="g-inline">
-				        			<div><i class="g-inline doc__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Изменения в ПД</span></div>
-				        			<div><i class="g-inline doc__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Свидетельство о государственной регистрации права собственности на земельный участок</span></div>
-				        		</li>
-				        		<li class="g-inline">
-				        			<div><i class="g-inline doc__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Проектная декларация</span></div>
-				        		</li>
-				        	</ul>
-				        </div> 
-				    </ul>
-				    <!---->
-					<ul class="pix__docs__tabs" id="forth-docs-tab">
-				    	<li class="pix__docs__tabs-li"><a href="#first-docs-tab" class="tab">Документы объекта</a></li>
-				        <li class="pix__docs__tabs-li"><a href="#second-docs-tab" class="tab">Финансовые документы</a></li>
-				        <li class="pix__docs__tabs-li"><a href="#third-docs-tab" class="tab">Форма договора долевого участия</a></li>
-				        <li class="pix__docs__tabs-li"><a href="#forth-docs-tab" class="active-tab">Паркинг</a></li> 
-				        <div class="content-tab">
-				        	<ul class="docs__tabs__iconSet">
-				        		<li class="g-inline">
-				        			<div><i class="g-inline doc__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Проектная декларация</span></div>
-				        			<div><i class="g-inline doc__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Разрешение на строительство</span></div>
-				        		</li>
-				        		<li class="g-inline">
-				        			<div><i class="g-inline doc__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Изменения в ПД</span></div>
-				        			<div><i class="g-inline doc__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Свидетельство о государственной регистрации права собственности на земельный участок</span></div>
-				        		</li>
-				        		<li class="g-inline">
-				        			<div><i class="g-inline doc__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Проектная декларация</span></div>
-				        		</li>
-				        	</ul>
-				        </div> 
+				    <ul class="docs__tab__ul">
+				        <li class="docs__tab__content">
+				            <ul class="docs__tabs__iconSet">
+				                <li class="g-inline">
+				                    <div><i class="g-inline docs__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Проектная декларация</span></div>
+				                    <div><i class="g-inline docs__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Разрешение на строительство</span></div>
+				                </li>
+				                <li class="g-inline">
+				                    <div><i class="g-inline docs__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Изменения в ПД</span></div>
+				                    <div><i class="g-inline docs__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Свидетельство о государственной регистрации права собственности на земельный участок</span></div>
+				                </li>
+				                <li class="g-inline">
+				                    <div><i class="g-inline docs__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Проектная декларация</span></div>
+				                </li>
+				            </ul>
+				        </li>
+				        <li class="docs__tab__content second">
+				            <ul class="docs__tabs__iconSet">
+				                <li class="g-inline">
+				                    <div><i class="g-inline docs__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Проектная декларация</span></div>
+				                    <div><i class="g-inline docs__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Разрешение на строительство</span></div>
+				                </li>
+				                <li class="g-inline">
+				                    <div><i class="g-inline docs__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Изменения в ПД</span></div>
+				                    <div><i class="g-inline docs__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Свидетельство о государственной регистрации права собственности на земельный участок</span></div>
+				                </li>
+				                <li class="g-inline">
+				                    <div><i class="g-inline docs__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Проектная декларация</span></div>
+				                </li>
+				            </ul>
+				        </li>
+				        <li class="docs__tab__content second">
+				            <ul class="docs__tabs__iconSet">
+				                <li class="g-inline">
+				                    <div><i class="g-inline docs__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Проектная декларация</span></div>
+				                    <div><i class="g-inline docs__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Разрешение на строительство</span></div>
+				                </li>
+				                <li class="g-inline">
+				                    <div><i class="g-inline docs__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Изменения в ПД</span></div>
+				                    <div><i class="g-inline docs__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Свидетельство о государственной регистрации права собственности на земельный участок</span></div>
+				                </li>
+				                <li class="g-inline">
+				                    <div><i class="g-inline docs__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Проектная декларация</span></div>
+				                </li>
+				            </ul>
+				        </li>
+				        <li class="docs__tab__content second">
+				            <ul class="docs__tabs__iconSet">
+				                <li class="g-inline">
+				                    <div><i class="g-inline docs__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Проектная декларация</span></div>
+				                    <div><i class="g-inline docs__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Разрешение на строительство</span></div>
+				                </li>
+				                <li class="g-inline">
+				                    <div><i class="g-inline docs__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Изменения в ПД</span></div>
+				                    <div><i class="g-inline docs__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Свидетельство о государственной регистрации права собственности на земельный участок</span></div>
+				                </li>
+				                <li class="g-inline">
+				                    <div><i class="g-inline docs__icon g-vAlignMiddle"></i><span class="g-inline g-vAlignMiddle">Проектная декларация</span></div>
+				                </li>
+				            </ul>
+				        </li>
 				    </ul>
 				</div>
 			</fieldset>

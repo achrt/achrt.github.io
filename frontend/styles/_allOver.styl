@@ -4,6 +4,7 @@ freshOrange = #fca74b
 bloodyRed = #d0011b;
 fontFamily = PT Serif
 fontFamilyS = PT Sans Narrow
+borderGray = solid 1px lightGray
 
 body{
 	text-align: center;
@@ -18,6 +19,11 @@ body{
   position: absolute;
   width: 1640px;
   height: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
 }
 p, h1{
 	margin: 2px 0;
@@ -32,7 +38,6 @@ p, h1{
 }
 .g-inline{
 	display: inline-block;
-	vertical-align: middle;
 	font-size: 16px;
 }
 .g-description{
@@ -50,6 +55,9 @@ p, h1{
 	vertical-align: middle;
 }
 .g-vAlignBottom{
+	vertical-align: bottom;
+}
+.g-vAlignTop{
 	vertical-align: bottom;
 }
 .g-lightGray{
