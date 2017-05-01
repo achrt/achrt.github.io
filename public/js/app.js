@@ -17,7 +17,7 @@ window.initMap = function() {
     title: 'Дом на Комсомольском',
     icon: 'images/house.svg'
   });
-  var contentString = '<div>'+'<h1>Дом на Комсомольском</h1>'+'<div>'+'<img src="images/Image 1.png">'+'<p>Очень крутой текст о доме на Комсомольском</p>'+'</div>'+'</div>';
+  var contentString = '<div>'+'<h1>Дом на Комсомольском</h1>'+'<div>'+'<img src="images/slider2.png">'+'<p>Очень крутой текст о доме на Комсомольском</p>'+'</div>'+'</div>';
     var infowindow = new google.maps.InfoWindow({
           content: contentString,
           maxWidth: 400
