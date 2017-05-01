@@ -13,7 +13,7 @@
 	/*border-bottom: 2px solid freshOrange;*/
 	box-shadow:0 6px 0px -3px freshOrange;
 }
-.flats__label {
+.flats__label, .flats__label-2 {
 	width: 155px;
 	cursor: pointer;
 }
@@ -35,7 +35,16 @@
 	left: 3px;
 	right: 3px;
 	top: 3px;
-	bottom: 2px;
+	bottom: 3px;
+	background: freshOrange;
+}
+.flats__label-2.activeFlats-2 .label__style:after {
+	content: " ";
+	position: absolute;
+	left: 3px;
+	right: 3px;
+	top: 3px;
+	bottom: 3px;
 	background: freshOrange;
 }
 /*таблица квартир*/
@@ -96,9 +105,9 @@
 			margin: 0 5px 0 10px;
 		}
 	}
-	&__single{
+	&__single, &__single-2{
 		position:relative;
-		&-descr{
+		&-descr, &-descr-2{
 			text-align: left;
 			display:none;
 		    padding: 20px 20px 0px 20px;
@@ -106,18 +115,18 @@
 		    width: 280px;
 		    height: 320px;
 		    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
-		    &-p{
-		    	font-size: 14px;
-		    	font-weight: normal;
-		    }
-		    &-img{
-		    	text-align: center;
-		    	margin: 10px;
-		    }
+		}
+		&-descr-p{
+		    font-size: 14px;
+		    font-weight: normal;
+		}
+		&-img{
+			text-align: center;
+			margin: 10px;
 		}
 	}
 }
-.flat__single:hover .flat__single-descr{
+.flat__single:hover .flat__single-descr, .flat__single-2:hover .flat__single-descr-2{
 	display: block;
     position: absolute;
     top: 40px;

@@ -1,16 +1,26 @@
-.owl{
-	&-prev{
-		display: inline-block;
-		position: absolute;
-		top: 40%;
-    	left: -6%;
-    }
-    &-next{
-    	display: inline-block;
-		position: absolute;
-		top: 40%;
-		left: 102%;
-    }
+.floorsPlan__slider .arrow-left{
+	display: inline-block;
+	position: absolute;
+	top: 40%;
+    left: -1.5%;
+}
+.floorsPlan__slider .arrow-right{
+    display: inline-block;
+	position: absolute;
+	top: 40%;
+	left: 99.2%;
+}
+.progress__slider .arrow-left{
+	display: inline-block;
+	position: absolute;
+	top: 40%;
+    left: -6.5%;
+}
+.progress__slider .arrow-right{
+    display: inline-block;
+	position: absolute;
+	top: 40%;
+	left: 102%;
 }
 .owl-item{
 	width: 300px;
@@ -32,7 +42,7 @@
     border: solid 1px lightGray;
     position: absolute;
     right: -4%;
-    top: 12%;
+    top: 11%;
 }
 .floorsPlan__border{
 	max-width: 1476px;
@@ -42,4 +52,14 @@
 }
 .floorsPlan__carousel__box{
 	max-width: 1476px;
+}
+.arrow{
+	&-right{
+		display: block;
+		@extend $images--arrow_right;
+	}
+	&-left{
+		display: block;
+		@extend $images--arrow_left;
+	}
 }

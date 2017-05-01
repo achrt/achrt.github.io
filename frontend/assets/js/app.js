@@ -33,7 +33,7 @@ $(document).ready(function() {
     items : 3,
     autoPlay : false,
     navigation : true,
-    navigationText : ["prev","next"],
+    navigationText : ['<div class="prigress__slider"><i class="arrow-left"></i></div>','<div class="prigress__slider"><i class="arrow-right"></i></div>'],
     rewindNav : true,
     pagination : false,
     paginationNumbers: false,
@@ -49,16 +49,16 @@ $(document).ready(function() {
 /*Настройки 2 слайдера*/
 $(document).ready(function() {
 
-  $("#owl-example2").owlCarousel({
+  $('#owl-example2').owlCarousel({
     items : 1,
     autoPlay : false,
     navigation : true,
-    navigationText : ["prev","next"],
+    navigationText : ['<div class="floorsPlan__slider"><i class="arrow-left"></i></div>','<div class="floorsPlan__slider"><i class="arrow-right"></i></div>'],
     rewindNav : true,
     pagination : false,
     paginationNumbers: false,
-    baseClass : "owl-carousel",
-    theme : "owl-theme",
+    baseClass : 'owl-carousel',
+    theme : 'owl-theme',
     autoHeight : false,
     dragBeforeAnimFinish : true,
     mouseDrag : true,
@@ -87,34 +87,67 @@ $(function(){
     })
         $('.docs__tab__title__li:first').addClass('active');
         $('.docs__tab__content:first').css('display', 'block');
-    });
+});
 /*Радиокнопки*/
 $(document).ready(function () {
     $('.flats__label').click(function() {
         $('.activeFlats').removeClass("activeFlats");
         $(this).addClass("activeFlats");
     });
+    $('.flats__label-2').click(function() {
+        $('.activeFlats-2').removeClass("activeFlats-2");
+        $(this).addClass("activeFlats-2");
+    });
 });
+/*Скрыть/показать секцию*/
 $(document).ready(function() {
     $('#single').click(function() {
         $('.flat__single').removeClass('g-invisible');
+        $('.flat__single-descr').css('visibility','visible');
         $('.flat__double').addClass('g-invisible');
         $('.flat__triple').addClass('g-invisible');
     });
     $('#double').click(function() {
         $('.flat__single').addClass('g-invisible');
+        $('.flat__single-descr').css('visibility','hidden');
         $('.flat__double').removeClass('g-invisible');
         $('.flat__triple').addClass('g-invisible');
     });
     $('#triple').click(function() {
         $('.flat__single').addClass('g-invisible');
+        $('.flat__single-descr').css('visibility','hidden');
         $('.flat__double').addClass('g-invisible');
         $('.flat__triple').removeClass('g-invisible');
     });
     $('#all').click(function() {
         $('.flat__single').removeClass('g-invisible');
+        $('.flat__single-descr').css('visibility','visible');
         $('.flat__double').removeClass('g-invisible');
         $('.flat__triple').removeClass('g-invisible');
+    });
+    $('#single-2').click(function() {
+        $('.flat__single-2').removeClass('g-invisible');
+        $('.flat__single-descr-2').css('visibility','visible');
+        $('.flat__double-2').addClass('g-invisible');
+        $('.flat__triple-2').addClass('g-invisible');
+    });
+    $('#double-2').click(function() {
+        $('.flat__single-2').addClass('g-invisible');
+        $('.flat__single-descr-2').css('visibility','hidden');
+        $('.flat__double-2').removeClass('g-invisible');
+        $('.flat__triple-2').addClass('g-invisible');
+    });
+    $('#triple-2').click(function() {
+        $('.flat__single-2').addClass('g-invisible');
+        $('.flat__single-descr-2').css('visibility','hidden');
+        $('.flat__double-2').addClass('g-invisible');
+        $('.flat__triple-2').removeClass('g-invisible');
+    });
+    $('#all-2').click(function() {
+        $('.flat__single-2').removeClass('g-invisible');
+        $('.flat__single-descr-2').css('visibility','visible');
+        $('.flat__double-2').removeClass('g-invisible');
+        $('.flat__triple-2').removeClass('g-invisible');
     });
 });
 /*Модальное окно*/
@@ -127,4 +160,10 @@ $(document).ready(function() {
     e.preventDefault();
     });
 });
-
+/**/
+$(document).ready(function() {
+    $('.nav__item').click(function() {
+        $('.nav__active').removeClass("nav__active");
+        $(this).addClass("nav__active");
+    });
+});
